@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/Home.js'
 import Page2 from './components/Page2.js'
+import Form from './components/Form.js'
 import NavBar from './components/NavBar.js'
 import {
   BrowserRouter as Router,
@@ -15,6 +16,7 @@ function App() {
         <NavBar />
         <Route exact path="/" component={Home} />
         <Route exact path="/page2" component={Page2} />
+        <Route exact path="/form" component={Form} />
       </header>
     </div>
     </Router>
