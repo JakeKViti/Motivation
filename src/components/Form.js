@@ -11,11 +11,37 @@ export default class Form extends React.Component {
         return (
           <form onSubmit={this.handleSubmit}>
             <label>
-            Label
+            Your Name?
+            <br></br>
             <input 
                 type="text" 
             />
             </label>
+            <br></br>
+            <label>
+            Motivational Message/Quote?
+            <br></br>
+            <textarea 
+            rows="5" 
+            cols="50"
+            />
+            </label>
+            <br></br>
+            <label>
+            Original Sayer?
+            <br></br>
+            <input 
+                type="text" 
+            />
+            </label>
+            <br></br>
+            <label>
+            Credit You?
+            <input 
+                type="checkbox" 
+            />
+            </label>
+            <br></br>
             <input 
             type="submit" 
             value="Submit" 
