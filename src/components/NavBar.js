@@ -5,10 +5,10 @@ export default class NavBar extends React.Component {
     render() {
         return (
         <div className="navbar">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/motd">Today's Motivation</NavLink>
-        <NavLink to="/form">Submit Motivation</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/" style={{paddingRight: '15px'}}>Home</NavLink>
+        <NavLink to="/motd" style={{paddingRight: '15px'}}>Today's Motivation</NavLink>
+        <NavLink to="/form" style={{paddingRight: '15px'}}>Submit Motivation</NavLink>
+        <NavLink to="/about" style={{paddingRight: '15px'}}>About</NavLink>
         </div>
         )
     }

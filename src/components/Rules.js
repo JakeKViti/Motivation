@@ -4,7 +4,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                Rules
+                All Submitions Will Be Under Review
             </div>
         );
     }
