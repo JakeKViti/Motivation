@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default class Form extends React.Component {
+    state = {
+        name: "Anon",
+        message: "None",
+        origin: "Unknown",
+    }
 
     handleSubmit = (event) => {
         event.preventDefault()
@@ -11,40 +16,40 @@ export default class Form extends React.Component {
         return (
           <form onSubmit={this.handleSubmit}>
             <label>
-            Your Name?
+              Your Name?
             <br></br>
             <input 
-                type="text" 
+              type="text" 
             />
             </label>
             <br></br>
             <label>
-            Motivational Message/Quote?
+              Motivational Message/Quote?
             <br></br>
             <textarea 
-            rows="5" 
-            cols="50"
+              rows="5" 
+              cols="50"
             />
             </label>
             <br></br>
             <label>
-            Original Sayer?
+              Original Sayer?
             <br></br>
             <input 
-                type="text" 
+              type="text" 
             />
             </label>
             <br></br>
             <label>
-            Credit You?
+              Credit You?
             <input 
-                type="checkbox" 
+              type="checkbox" 
             />
             </label>
             <br></br>
             <input 
-            type="submit" 
-            value="Submit" 
+              type="submit" 
+              value="Submit" 
             />
           </form>
         );
