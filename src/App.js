@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './components/Home.js'
-import Page2 from './components/Page2.js'
+import Motivation from './components/Motivation.js'
 import Form from './components/Form.js'
 import NavBar from './components/NavBar.js'
 import {
@@ -15,7 +15,7 @@ function App() {
       <header className="App-header">
         <NavBar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/page2" component={Page2} />
+        <Route exact path="/motd" component={Motivation} />
         <Route exact path="/form" component={Form} />
       </header>
     </div>
