@@ -7,7 +7,8 @@ export default class NavBar extends React.Component {
         <div className="navbar">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/motd">Today's Motivation</NavLink>
-        <NavLink to="/form">Form</NavLink>
+        <NavLink to="/form">Submit Motivation</NavLink>
+        <NavLink to="/about">About</NavLink>
         </div>
         )
     }
