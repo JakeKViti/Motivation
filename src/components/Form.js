@@ -4,12 +4,20 @@ export default class Form extends React.Component {
     state = {
         name: "Anon",
         message: "None",
-        origin: "Unknown",
+        sayer: "Unknown",
+        where: "Unknown"
+    }
+
+    handleChange = (event) => {
+      debugger
+      this.setState({
+        
+      })
     }
 
     handleSubmit = (event) => {
         event.preventDefault()
-        alert("Submit Successful")
+        debugger
     }
 
     render() {
@@ -34,6 +42,14 @@ export default class Form extends React.Component {
             <br></br>
             <label>
               Original Sayer?
+            <br></br>
+            <input 
+              type="text" 
+            />
+            </label>
+            <br></br>
+            <label>
+              Where Did They Say It?
             <br></br>
             <input 
               type="text" 
