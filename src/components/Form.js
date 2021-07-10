@@ -5,13 +5,37 @@ export default class Form extends React.Component {
         name: "Anon",
         message: "None",
         sayer: "Unknown",
-        where: "Unknown"
+        where: "Unknown",
+        credit: false
     }
 
-    handleChange = (event) => {
-      debugger
+    handleNameChange = (event) => {
       this.setState({
-        
+        name: event.target.value
+      })
+    }
+
+    handleMessageChange = (event) => {
+      this.setState({
+        message: event.target.value
+      })
+    }
+
+    handleSayerChange = (event) => {
+      this.setState({
+        sayer: event.target.value
+      })
+    }
+
+    handleWhereChange = (event) => {
+      this.setState({
+        where: event.target.value
+      })
+    }
+
+    handleCreditChange = (event) => {
+      this.setState({
+        credit: event.target.value
       })
     }
 
@@ -28,6 +52,7 @@ export default class Form extends React.Component {
             <br></br>
             <input 
               type="text" 
+              onChange={this.handleNameChange}
             />
             </label>
             <br></br>
@@ -37,6 +62,7 @@ export default class Form extends React.Component {
             <textarea 
               rows="5" 
               cols="50"
+              onChange={this.handleMessageChange}
             />
             </label>
             <br></br>
@@ -45,6 +71,7 @@ export default class Form extends React.Component {
             <br></br>
             <input 
               type="text" 
+              onChange={this.handleSayerChange}
             />
             </label>
             <br></br>
@@ -53,6 +80,7 @@ export default class Form extends React.Component {
             <br></br>
             <input 
               type="text" 
+              onChange={this.handleWhereChange}
             />
             </label>
             <br></br>
@@ -60,6 +88,7 @@ export default class Form extends React.Component {
               Credit You?
             <input 
               type="checkbox" 
+              onChange={this.handleCreditChange}
             />
             </label>
             <br></br>
