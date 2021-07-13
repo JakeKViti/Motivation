@@ -1,16 +1,26 @@
 import React from 'react';
 
 export default class Form extends React.Component {
-    state = {
-        message: " Enter Here"
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: 'Please write an you motivation here.'
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+    
+
+    handleChange = (event) =>{
+      this.setState({value: event.target.value});
     }
 
-    handleChange = () =>{
-      console.log("Test")
-    }
+    handleSubmit = (event) =>{
+      alert(this.state.value + " will be submitted");
+    event.preventDefault();
 
-    handleSubmit = () =>{
-      console.log("Test")
     }
 
     render() { 
@@ -21,6 +31,7 @@ export default class Form extends React.Component {
           <br></br>
           <textarea value={this.state.message} onChange={this.handleChange} />
         </label>
+        <br></br>
         <input type="submit" value="Submit" />
       </form>
       );
