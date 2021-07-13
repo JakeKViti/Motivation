@@ -6,12 +6,14 @@ export default class Form extends React.Component {
     this.state = {
       name: "Anonymous",
       message: 'Please write your Motivation here.',
-      credit: "Anonymous"
+      credit: "Anonymous",
+      origin: "Unknown"
     };
 
     this.handleMotivationChange = this.handleMotivationChange.bind(this);
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleCreditChange = this.handleCreditChange.bind(this);
+    this.handleOriginChange = this.handleOriginChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -33,6 +35,12 @@ export default class Form extends React.Component {
       });
     }
 
+    handleOriginChange = (event) =>{
+      this.setState({
+        origin: event.target.value
+      });
+    }
+
     handleSubmit = (event) =>{
       alert(this.state.name + " name " + this.state.message + " " + this.state.credit + " will be submitted");
     event.preventDefault();
@@ -51,6 +59,11 @@ export default class Form extends React.Component {
           <label>
             Said by who?:
             <input type="text" value={this.state.name} onChange={this.handleNameChange} />
+            <br></br>
+          </label>
+          <label>
+            Where It Was Said?:
+            <input type="text" value={this.state.origin} onChange={this.handleOriginChange} />
             <br></br>
           </label>
           <label>
