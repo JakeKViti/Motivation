@@ -1,24 +1,32 @@
 import React from 'react';
 
 export default class Form extends React.Component {
-  constructor(props) {
+    constructor(props) {
     super(props);
     this.state = {
-      message: 'Please write an you motivation here.'
+      name: "Anonymous",
+      message: 'Please write your Motivation here.'
     };
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleMotivationChange = this.handleMotivationChange.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-    
+  handleNameChange = (event) =>{
+    this.setState({
+      name: event.target.value
+    });
+  }
 
-    handleChange = (event) =>{
-      this.setState({value: event.target.value});
+    handleMotivationChange = (event) =>{
+      this.setState({
+        message: event.target.value
+      });
     }
 
     handleSubmit = (event) =>{
-      alert(this.state.value + " will be submitted");
+      alert(this.state.name + this.state.message + " will be submitted");
     event.preventDefault();
 
     }
@@ -26,12 +34,16 @@ export default class Form extends React.Component {
     render() { 
       return (
         <form onSubmit={this.handleSubmit}>
-        <label>
-          Enter Your Motivation Here!:
-          <br></br>
-          <textarea value={this.state.message} onChange={this.handleChange} />
-        </label>
-        <br></br>
+          <label>
+            Name:
+            <input type="text" value={this.state.name} onChange={this.handleNameChange} />
+            <br></br>
+          </label>
+          <label>
+            Enter Your Motivation Here!:
+            <br></br>
+            <textarea value={this.state.message} onChange={this.handleMotivationChange} />
+          </label>
         <input type="submit" value="Submit" />
       </form>
       );
