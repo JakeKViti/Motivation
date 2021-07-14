@@ -4,7 +4,12 @@ export default class Motivation extends React.Component {
     render() {
         return (
             <div>
-                Here's Some Wise Words
+                How This Page Will Work
+
+                Todays Motivation:
+                (Message) 
+                (Original Sayer) 
+                (Submitted By:)
             </div>
         );
     }
