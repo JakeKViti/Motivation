@@ -10,9 +10,9 @@ import Quote from './Quote'
     }
   
     handleLoading = () => {
-        console.log(this.props.entries)
-        if(this.props.entries.length !== 0) {
-            return <Quote entries={this.props.entries} />
+        console.log(this.props.entry)
+        if(this.props.entry.length === 1) {
+            return <Quote entry={this.props.entry} />
         }
     }
 
@@ -28,7 +28,7 @@ import Quote from './Quote'
 
 const mapStateToProps = state => {
     return {
-      entries: state.entries,
+        entry: state.entry,
       loading: state.loading
     }
   }
