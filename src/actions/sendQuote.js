@@ -1,4 +1,4 @@
-export function sendScore(entry) {
+export function sendQuote(entry) {
     return () => {
       fetch(`http://localhost:3001/api/v1/quotes`, {
         method: "POST",

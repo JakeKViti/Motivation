@@ -1,6 +1,7 @@
 import React from 'react';
-
-export default class Form extends React.Component {
+import { sendQuote } from "../actions/sendQuote";
+import { connect } from 'react-redux'
+class Form extends React.Component {
     constructor(props) {
     super(props);
     this.state = {
@@ -42,9 +43,10 @@ export default class Form extends React.Component {
     }
 
     handleSubmit = (event) =>{
-      alert(this.state.name + " name " + this.state.message + " " + this.state.credit + " will be submitted");
+    //alert(this.state.name + " name " + this.state.message + " " + this.state.credit + " will be submitted");
     event.preventDefault();
-
+    const quote = {quote: {quote: this.state.message, whosaid: this.state.name, origin: this.state.origin, sentby: this.state.origin, approved: false}}
+    this.props.sendQuote(quote)
     }
 
     render() { 
@@ -79,4 +81,12 @@ export default class Form extends React.Component {
   }
 
   
+  const mapDispatchToProps = dispatch => {
+    return {
+      sendQuote: (entry) => {
+        dispatch(sendQuote(entry))
+      }
+    };
+  };
   
+  export default connect(null, mapDispatchToProps)(Form);
