@@ -6,7 +6,7 @@ export default class NavBar extends React.Component {
         return (
         <div className="navbar">
         <NavLink to="/" style={{paddingRight: '15px'}}>Home</NavLink>
-        <NavLink to="/motd" style={{paddingRight: '15px'}}>Today's Motivation</NavLink>
+        <NavLink to="/moti" style={{paddingRight: '15px'}}>Random Motivation</NavLink>
         <NavLink to="/form" style={{paddingRight: '15px'}}>Submit Motivation</NavLink>
         <NavLink to="/about" style={{paddingRight: '15px'}}>About</NavLink>
         </div>

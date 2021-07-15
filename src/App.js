@@ -16,7 +16,7 @@ function App() {
       <header className="App-header">
         <NavBar />
         <Route exact path="/" component={Home} />
-        <Route exact path="/motd" component={Motivation} />
+        <Route exact path="/moti" component={Motivation} />
         <Route exact path="/form" component={Form} />
         <Route exact path="/about" component={Rules} />
       </header>
