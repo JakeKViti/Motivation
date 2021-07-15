@@ -6,7 +6,7 @@ export default function manageQuote(state = {
       case 'LOADING_QUOTE':
         return {
           ...state,
-          entry: [...state.entry],
+          entry: state.entry,
           loading: true
         }
       case 'ADD_QUOTE':

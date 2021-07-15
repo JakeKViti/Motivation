@@ -4,18 +4,18 @@ export default class Quote extends React.Component {
     render() {
         return (
             <ol id="quote">
-              {this.props.entry.map(quote => 
-              <div key={quote.id}>
+              
+              <div key={this.props.entry.id}>
                 <p>
-                  {quote.quote}
+                  {this.props.entry.quote}
                 </p>
                 <p>
-                    Said by {quote.whosaid} in {quote.origin}    
+                    Said by {this.props.entry.whosaid} in {this.props.entry.origin}    
                 </p>
                 <p>
-                    Motivation was submitted by {quote.sentby}
+                    Motivation was submitted by {this.props.entry.sentby}
                 </p>
-              </div>)}
+              </div>
             </ol>
           )
     }

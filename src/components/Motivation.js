@@ -11,15 +11,13 @@ import Quote from './Quote'
   
     handleLoading = () => {
         console.log(this.props.entry)
-        if(this.props.entry.length === 1) {
-            return <Quote entry={this.props.entry} />
-        }
+        return <Quote entry={this.props.entry} />
     }
 
     render() {
         return (
             <div>
-                Here's Some Wise Words
+                Words To Live By
                 {this.handleLoading()}
             </div>
         );
