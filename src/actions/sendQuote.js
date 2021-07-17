@@ -1,6 +1,6 @@
 export function sendQuote(entry) {
     return () => {
-      fetch(`http://localhost:3001/api/v1/quotes`, {
+      fetch(`https://ancient-lake-58391.herokuapp.com/api/v1/quotes`, {
         method: "POST",
         headers: {
           Accept: "application/json",
