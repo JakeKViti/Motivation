@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/newapp/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/newapp/static/js/main.a17eeee3.chunk.js",
-    "main.js.map": "/newapp/static/js/main.a17eeee3.chunk.js.map",
-    "runtime-main.js": "/newapp/static/js/runtime-main.fbd47a33.js",
-    "runtime-main.js.map": "/newapp/static/js/runtime-main.fbd47a33.js.map",
-    "static/js/2.a997cb6d.chunk.js": "/newapp/static/js/2.a997cb6d.chunk.js",
-    "static/js/2.a997cb6d.chunk.js.map": "/newapp/static/js/2.a997cb6d.chunk.js.map",
-    "index.html": "/newapp/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/newapp/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.a997cb6d.chunk.js.LICENSE.txt": "/newapp/static/js/2.a997cb6d.chunk.js.LICENSE.txt"
+    "main.css": "/Motivation/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/Motivation/static/js/main.a17eeee3.chunk.js",
+    "main.js.map": "/Motivation/static/js/main.a17eeee3.chunk.js.map",
+    "runtime-main.js": "/Motivation/static/js/runtime-main.05d577dd.js",
+    "runtime-main.js.map": "/Motivation/static/js/runtime-main.05d577dd.js.map",
+    "static/js/2.a997cb6d.chunk.js": "/Motivation/static/js/2.a997cb6d.chunk.js",
+    "static/js/2.a997cb6d.chunk.js.map": "/Motivation/static/js/2.a997cb6d.chunk.js.map",
+    "index.html": "/Motivation/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/Motivation/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a997cb6d.chunk.js.LICENSE.txt": "/Motivation/static/js/2.a997cb6d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fbd47a33.js",
+    "static/js/runtime-main.05d577dd.js",
     "static/js/2.a997cb6d.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.a17eeee3.chunk.js"
