@@ -9,16 +9,17 @@ import {
   Route
 } from 'react-router-dom';
 
+
 function App() {
   return (
     <Router>
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/moti" component={Motivation} />
-        <Route exact path="/form" component={Form} />
-        <Route exact path="/about" component={Rules} />
+        <Route exact path="/Motivation/" component={Home} />
+        <Route exact path="/Motivation/moti" component={Motivation} />
+        <Route exact path="/Motivation/form" component={Form} />
+        <Route exact path="/Motivation/about" component={Rules} />
       </header>
     </div>
     </Router>
