@@ -46,6 +46,7 @@ class Form extends React.Component {
     //alert(this.state.name + " name " + this.state.message + " " + this.state.credit + " will be submitted");
     event.preventDefault();
     const quote = {quote: {quote: this.state.message, whosaid: this.state.name, origin: this.state.origin, sentby: this.state.credit, approved: false}}
+    alert("{this.state.message} was submitted, Thank you {this.state.sentby}. An Admin will approve the quote soon")
     this.props.sendQuote(quote)
     }
 
