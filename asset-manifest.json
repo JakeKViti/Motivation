@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Motivation/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/Motivation/static/js/main.2d50e1f4.chunk.js",
-    "main.js.map": "/Motivation/static/js/main.2d50e1f4.chunk.js.map",
-    "runtime-main.js": "/Motivation/static/js/runtime-main.05d577dd.js",
-    "runtime-main.js.map": "/Motivation/static/js/runtime-main.05d577dd.js.map",
-    "static/js/2.a997cb6d.chunk.js": "/Motivation/static/js/2.a997cb6d.chunk.js",
-    "static/js/2.a997cb6d.chunk.js.map": "/Motivation/static/js/2.a997cb6d.chunk.js.map",
+    "main.css": "/Motivation/static/css/main.b69fcdf7.chunk.css",
+    "main.js": "/Motivation/static/js/main.da279dae.chunk.js",
+    "main.js.map": "/Motivation/static/js/main.da279dae.chunk.js.map",
+    "runtime-main.js": "/Motivation/static/js/runtime-main.6b373b20.js",
+    "runtime-main.js.map": "/Motivation/static/js/runtime-main.6b373b20.js.map",
+    "static/js/2.2f4dc0eb.chunk.js": "/Motivation/static/js/2.2f4dc0eb.chunk.js",
+    "static/js/2.2f4dc0eb.chunk.js.map": "/Motivation/static/js/2.2f4dc0eb.chunk.js.map",
     "index.html": "/Motivation/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/Motivation/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.a997cb6d.chunk.js.LICENSE.txt": "/Motivation/static/js/2.a997cb6d.chunk.js.LICENSE.txt"
+    "static/css/main.b69fcdf7.chunk.css.map": "/Motivation/static/css/main.b69fcdf7.chunk.css.map",
+    "static/js/2.2f4dc0eb.chunk.js.LICENSE.txt": "/Motivation/static/js/2.2f4dc0eb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.05d577dd.js",
-    "static/js/2.a997cb6d.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.2d50e1f4.chunk.js"
+    "static/js/runtime-main.6b373b20.js",
+    "static/js/2.2f4dc0eb.chunk.js",
+    "static/css/main.b69fcdf7.chunk.css",
+    "static/js/main.da279dae.chunk.js"
   ]
 }
