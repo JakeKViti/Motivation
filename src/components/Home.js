@@ -4,7 +4,7 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                Welcome To The Motivational App 
+                Welcome To Random Motivation!
             </div>
         );
     }
