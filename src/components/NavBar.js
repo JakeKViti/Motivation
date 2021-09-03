@@ -16,6 +16,7 @@ export default class NavBar extends React.Component {
         <NavLink to="/Motivation/moti" style={{paddingRight: '15px'}}>Random Motivation</NavLink>
         <NavLink to="/Motivation/form" style={{paddingRight: '15px'}}>Submit Motivation</NavLink>
         <NavLink to="/Motivation/about" style={{paddingRight: '15px'}}>About</NavLink>
+        <NavLink to="/Motivation/admin" style={{paddingRight: '15px'}}>Admin</NavLink>
             <hr
             style={{
                 backgroundColor: "white",
