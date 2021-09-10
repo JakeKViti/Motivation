@@ -1,5 +1,6 @@
 export default function manageQuote(state = {
     entry: [],
+    unapproved: [],
     loading: false
   }, action) {
     switch (action.type) {
