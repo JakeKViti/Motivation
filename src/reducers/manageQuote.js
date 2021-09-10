@@ -14,12 +14,24 @@ export default function manageQuote(state = {
           ...state,
           entry: action.payload,
           loading: false
-        }       
-        case 'SEND_QUOTE':
-          return {
-            ...state,
-            entry: action.payload
-          }
+        }
+      case 'LOADING_UNAPPROVED':
+        return {
+          ...state,
+          entry: state.entry,
+          loading: true
+        }   
+      case 'ADD_UNAPPROVED':
+      return {
+        ...state,
+        entry: action.payload,
+        loading: false
+      }    
+      case 'SEND_QUOTE':
+        return {
+          ...state,
+          entry: action.payload
+        }
       default:
         return state;
     }
