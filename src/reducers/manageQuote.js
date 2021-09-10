@@ -19,13 +19,13 @@ export default function manageQuote(state = {
       case 'LOADING_UNAPPROVED':
         return {
           ...state,
-          entry: state.entry,
+          unapproved: state.entry,
           loading: true
         }   
       case 'ADD_UNAPPROVED':
       return {
         ...state,
-        entry: action.payload,
+        unapproved: action.payload,
         loading: false
       }    
       case 'SEND_QUOTE':
